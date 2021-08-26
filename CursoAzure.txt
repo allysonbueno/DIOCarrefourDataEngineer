@@ -1,0 +1,85 @@
+o que eu gostaria de estudar
+- lógica de programação enfase em web
+- html
+- css
+- javascript
+- jquery
+- rest api
+
+
+ESTUDANDO:
+
+AZURE DEVOPS
+
+INFRA AZURE GLOBAL:
+- Região (Ex.: BR south)
+- Availabilty Zones (Data Center)
+
+SUBSCRIPTIONS:
+- Assinatura
+- Conta como qualquer uma de banco, mas com a Azure
+- Cada subscritions tem seu app, website, gateway, api, infra, etc.
+Quando há mais de uma assinatura, existem problemas na integração da subscritions 1 com a 2 por exemplo.
+
+
+Caracteristicas Subscriptions:
+				EMPRESA
+				    |
+				SUBSCRITION
+			   /     |      \
+			APP	   WEBSITE	CRM
+			VM'S   X	
+			DB	   Y
+			
+POLITICAS NAS SUBSCRIPTIONS (POLICIES): 
+- Cada subscription tem suas policies
+- Filtros, bloqueios, imitações, permissões
+
+RESOURCES GROUPS:
+- Serviços
+- Maior controle
+- Muito utilizado em projetos
+- Grupo de serviçoes dentro do mesmo dominio administrativo
+
+CRIANDO POLICIES E APLICANDO NO RESOURCES GROUPS
+- Exemplo: Dentro do resource group quero aplicar uma policcie que proibe 
+	criação de sql que não seja 12.0
+
+BILLING
+- consumo financeiro dentro da subscription
+- pode ser configurado alertas de limite de consumo $$$
+- subscription > manage > preview features é possível configurar o alerta acima
+- após habilitar dentro do subscription terá alertas disponíveis para configurar
+
+
+POWER SHELL - comandos no windows
+	$PSVersionTable - versão 6.2
+	conectar o PS ao Azure Cloud
+	instalar modulo dentro do PS 
+		get-azvm ver VM's 
+	1 - Install-Module -Name AZ -AllowClobber
+	2 - Connect-AZAccount
+
+CLOUD SHELL - comandos no web
+	assim como o PS mas executado na web após configurar a integração
+	
+STORAGE:
+	BLOB: armazena arquivos de acordo com a subscritpion TB, PB (Tamanho Dinâmico)
+			- big bucket
+	FILE STORAGE: share txt, xls, unidade (linux, mac, win), file sync (tipo onedrive)
+	TABLE STORAGE: semelhante ao sql mas não é, armazena dados em tabelas.
+	QUEUE STORAGE: Filas de Mensagens
+
+	ACCOUNT TYPE: (STORAGE ACCOUNT):	
+		INSTANCE DETAILS - 
+			ACCOUNT kind *gpv1: Antiga, não suporta hot/cool
+						 *gpv2: Novo, suporta hot/cool
+						 *BlobStorage: Blobs, só arquivos
+					Tigr:   *hot: acessa com + frequencia (mais caro) Doc, Video, xls
+							*cool: acessa com - frequencia (mais barato) bkp, archive
+		
+			REPLICATION: local, zona, regiao e regiao com acesso de leitura na outra regiao
+			
+	PERFORMANCE: 	DISCO STD: -$ SPINNING DISK
+					DISCO PREMIUM: +$ SSD
+				
