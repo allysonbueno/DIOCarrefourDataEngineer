@@ -1,0 +1,4 @@
+https://docs.python.org/
+
+https://docs.python.org/3/library/hashlib.html?highlight=hashlib#module-hashlib
+

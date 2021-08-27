@@ -1,0 +1,9 @@
+# utilizados em ataques de força bruta, gera uma word por linha
+import itertools
+
+string = input('String a ser permutada: ')
+
+resultado = itertools.permutations(string, len(string))
+
+for i in resultado:
+    print(''.join(i))
