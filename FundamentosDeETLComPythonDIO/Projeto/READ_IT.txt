@@ -1,0 +1,9 @@
+
+SOBRE READ_CSV:
+https://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.read_csv.html
+
+VALIDAÇÃO: PANDERA
+https://pandera.readthedocs.io/en/stable/
+
+Transformação: Variações de filtros (tempo execução)
+	https://medium.com/data-hackers/a-maneira-eficiente-de-filtrar-um-data-frame-pandas-4158a4e37c10
